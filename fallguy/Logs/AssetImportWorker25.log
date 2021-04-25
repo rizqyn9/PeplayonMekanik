@@ -11,72 +11,72 @@ D:\app\New folder\2020.3.0f1\Editor\Unity.exe
 -name
 AssetImportWorker25
 -projectPath
-E:/gameunity/fallguy
+E:/clone/PeplayonMekanik/fallguy
 -logFile
 Logs/AssetImportWorker25.log
 -srvPort
-64184
-Successfully changed project path to: E:/gameunity/fallguy
-E:/gameunity/fallguy
+54392
+Successfully changed project path to: E:/clone/PeplayonMekanik/fallguy
+E:/clone/PeplayonMekanik/fallguy
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 168.80 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 248.90 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path D:/app/New folder/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path E:/gameunity/fallguy/Assets
+[Subsystems] Discovering subsystems at path E:/clone/PeplayonMekanik/fallguy/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c92)
+    Renderer: Intel(R) UHD Graphics 630 (ID=0x3e9b)
     Vendor:   
-    VRAM:     4021 MB
-    Driver:   26.21.14.4128
+    VRAM:     4017 MB
+    Driver:   27.20.100.8682
 Initialize mono
 Mono path[0] = 'D:/app/New folder/2020.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'D:/app/New folder/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/app/New folder/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56368
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56992
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/app/New folder/2020.3.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/app/New folder/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/app/New folder/2020.3.0f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.005750 seconds.
+Registered in 0.005376 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 150.83 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 134.97 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  7.307 seconds
+- Completed reload, in  6.426 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.015337 seconds.
+Registered in 0.011796 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.20 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.94 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
-Find all reader and writers took 325 milliseconds
+Find all reader and writers took 370 milliseconds
 Script Module: UnityEngine.UI.dll
-Weave behaviours and messages took333 milliseconds
-Find all reader and writers took 243 milliseconds
+Weave behaviours and messages took334 milliseconds
+Find all reader and writers took 244 milliseconds
 Script Module: UnityEngine.TestRunner.dll
-Weave behaviours and messages took100 milliseconds
-Find all reader and writers took 230 milliseconds
+Weave behaviours and messages took93 milliseconds
+Find all reader and writers took 249 milliseconds
 Script Module: SimpleWebTransport.dll
-Weave behaviours and messages took31 milliseconds
-Find all reader and writers took 221 milliseconds
+Weave behaviours and messages took33 milliseconds
+Find all reader and writers took 233 milliseconds
 Script Module: Unity.Timeline.dll
-Weave behaviours and messages took137 milliseconds
-Find all reader and writers took 346 milliseconds
+Weave behaviours and messages took126 milliseconds
+Find all reader and writers took 379 milliseconds
 Script Module: Mirror.Examples.dll
 [Projectile] NetworkBehaviourProcessor
 [Tank] NetworkBehaviourProcessor
@@ -102,9 +102,9 @@ Script Module: Mirror.Examples.dll
 [PlayerController] NetworkBehaviourProcessor
 [RandomColor] NetworkBehaviourProcessor
 [ShootingTankBehaviour] NetworkBehaviourProcessor
-Weave behaviours and messages took1279 milliseconds
-  ProcessSitesModule Mirror.Examples.dll elapsed time:00:00:00.0820125
-Find all reader and writers took 256 milliseconds
+Weave behaviours and messages took1264 milliseconds
+  ProcessSitesModule Mirror.Examples.dll elapsed time:00:00:00.0713230
+Find all reader and writers took 315 milliseconds
 Script Module: Assembly-CSharp.dll
 [CameraManager] NetworkBehaviourProcessor
 [CharacterControls] NetworkBehaviourProcessor
@@ -115,9 +115,9 @@ Script Module: Assembly-CSharp.dll
 [ItemPickup] NetworkBehaviourProcessor
 [UI] NetworkBehaviourProcessor
 [win] NetworkBehaviourProcessor
-Weave behaviours and messages took259 milliseconds
-  ProcessSitesModule Assembly-CSharp.dll elapsed time:00:00:00.0139908
-Find all reader and writers took 321 milliseconds
+Weave behaviours and messages took270 milliseconds
+  ProcessSitesModule Assembly-CSharp.dll elapsed time:00:00:00.0127796
+Find all reader and writers took 371 milliseconds
 Script Module: Mirror.Components.dll
 [NetworkAnimator] NetworkBehaviourProcessor
 [NetworkRoomPlayer] NetworkBehaviourProcessor
@@ -149,21 +149,5 @@ Script Module: Mirror.Components.dll
 [NetworkTransformBase] NetworkBehaviourProcessor
 [NetworkTransformBase] NetworkBehaviourProcessor
 [NetworkTransformChild] NetworkBehaviourProcessor
-Weave behaviours and messages took810 milliseconds
-  ProcessSitesModule Mirror.Components.dll elapsed time:00:00:00.0407595
-Find all reader and writers took 206 milliseconds
-Script Module: Mirror.Tests.Common.dll
-Weave behaviours and messages took5 milliseconds
-Find all reader and writers took 297 milliseconds
-Script Module: Unity.TextMeshPro.dll
-Weave behaviours and messages took391 milliseconds
-Find all reader and writers took 214 milliseconds
-Script Module: Mirror.Tests.Runtime.dll
-Weave behaviours and messages took42 milliseconds
-Find all reader and writers took 215 milliseconds
-Script Module: Telepathy.dll
-Weave behaviours and messages took10 milliseconds
-Find all reader and writers took 281 milliseconds
-Script Module: Mirror.Authenticators.dll
-Weave behaviours and messages took542 milliseconds
-  ProcessSitesModule Mirror.Authenticators.dll elapsed time:00:00:00.0351495
+Weave behaviours and messages took896 milliseconds
+  ProcessSitesModule Mirror.Components.dll elapsed time:00:00:00.0380549
