@@ -23,4 +23,16 @@ public class Rotator : MonoBehaviour
             }
         }
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (obstacle2)
+        {
+            if (other.CompareTag("Player"))
+            {
+                Rigidbody rb = other.GetComponent<Rigidbody>();
+                rb.freezeRotation = false;
+            }
+        }
+    }
 }

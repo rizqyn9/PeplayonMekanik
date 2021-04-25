@@ -40,7 +40,7 @@ namespace Peplayon
 
         private void Update()
         {
-            if (NetworkServer.connections.Count >= 2
+            if (NetworkServer.connections.Count >= 1
                 )
             {
                 StartGame();
@@ -62,7 +62,7 @@ namespace Peplayon
 
         public void StartGame()
         {
-            if (NetworkServer.connections.Count >= 2)
+            if (NetworkServer.connections.Count == 1)
             {
                 Debug.Log("gaga");
                 UI ui = GameObject.FindGameObjectWithTag("GameManager").GetComponent<UI>();

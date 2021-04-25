@@ -11,19 +11,19 @@ D:\app\New folder\2020.3.0f1\Editor\Unity.exe
 -name
 AssetImportWorker14
 -projectPath
-E:/gameunity/fallguy
+E:/clone/PeplayonMekanik/fallguy
 -logFile
 Logs/AssetImportWorker14.log
 -srvPort
-64184
-Successfully changed project path to: E:/gameunity/fallguy
-E:/gameunity/fallguy
+56872
+Successfully changed project path to: E:/clone/PeplayonMekanik/fallguy
+E:/clone/PeplayonMekanik/fallguy
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 172.46 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 216.94 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path D:/app/New folder/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path E:/gameunity/fallguy/Assets
+[Subsystems] Discovering subsystems at path E:/clone/PeplayonMekanik/fallguy/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -35,76 +35,88 @@ Initialize mono
 Mono path[0] = 'D:/app/New folder/2020.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'D:/app/New folder/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/app/New folder/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56760
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56164
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/app/New folder/2020.3.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/app/New folder/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/app/New folder/2020.3.0f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.006670 seconds.
+Registered in 0.008420 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 170.76 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 244.34 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  7.507 seconds
+- Completed reload, in  7.936 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.011091 seconds.
+Registered in 0.038567 seconds.
 Begin MonoManager ReloadAssembly
+Could not load image E:\clone\PeplayonMekanik\fallguy\Library\ScriptAssemblies\Mirror.Examples.dll due to Invalid VirtualSize points beyond EOF
+Run the peverify utility against this for more information.
+
+Failed loading assembly Library/ScriptAssemblies/Mirror.Examples.dll reason: File does not contain a valid CIL image
+Loading assembly failed: "Library/ScriptAssemblies/Mirror.Examples.dll" reason: File does not contain a valid CIL image
+
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.46 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.17 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
-Find all reader and writers took 386 milliseconds
+Find all reader and writers took 379 milliseconds
 Script Module: UnityEngine.UI.dll
-Weave behaviours and messages took361 milliseconds
-Find all reader and writers took 300 milliseconds
+Weave behaviours and messages took369 milliseconds
+Find all reader and writers took 251 milliseconds
 Script Module: UnityEngine.TestRunner.dll
-Weave behaviours and messages took135 milliseconds
-Find all reader and writers took 260 milliseconds
+Weave behaviours and messages took112 milliseconds
+Find all reader and writers took 222 milliseconds
 Script Module: SimpleWebTransport.dll
-Weave behaviours and messages took34 milliseconds
-Find all reader and writers took 256 milliseconds
+Weave behaviours and messages took42 milliseconds
+Find all reader and writers took 331 milliseconds
 Script Module: Unity.Timeline.dll
-Weave behaviours and messages took145 milliseconds
-Find all reader and writers took 352 milliseconds
-Script Module: Mirror.Examples.dll
-[Projectile] NetworkBehaviourProcessor
-[Tank] NetworkBehaviourProcessor
-[NetworkRoomPlayer] NetworkBehaviourProcessor
-[NetworkRoomPlayerExt] NetworkBehaviourProcessor
-[PlayerController] NetworkBehaviourProcessor
-[PlayerScore] NetworkBehaviourProcessor
-[RandomColor] NetworkBehaviourProcessor
-[Reward] NetworkBehaviourProcessor
-[AddForce] NetworkBehaviourProcessor
-[Ball] NetworkBehaviourProcessor
-[Player] NetworkBehaviourProcessor
-[MatchController] NetworkBehaviourProcessor
-[PhysicsCollision] NetworkBehaviourProcessor
-[PlayerController] NetworkBehaviourProcessor
-[PlayerScore] NetworkBehaviourProcessor
-[RandomColor] NetworkBehaviourProcessor
-[Reward] NetworkBehaviourProcessor
-[Player] NetworkBehaviourProcessor
-[MonsterMovement] NetworkBehaviourProcessor
-[PlayerMovement] NetworkBehaviourProcessor
-[Player] NetworkBehaviourProcessor
-[PlayerController] NetworkBehaviourProcessor
-[RandomColor] NetworkBehaviourProcessor
-[ShootingTankBehaviour] NetworkBehaviourProcessor
-Weave behaviours and messages took1330 milliseconds
-  ProcessSitesModule Mirror.Examples.dll elapsed time:00:00:00.0840020
-Find all reader and writers took 365 milliseconds
+Weave behaviours and messages took192 milliseconds
+Exception :System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values.
+  at Mono.CecilX.PE.Image.ResolveVirtualAddress (System.UInt32 rva) [0x0000b] in <9a2bc2dadc3549b3bfc74bb584d58989>:0 
+  at Mono.CecilX.PE.ImageReader.MoveTo (Mono.CecilX.PE.DataDirectory directory) [0x00006] in <9a2bc2dadc3549b3bfc74bb584d58989>:0 
+  at Mono.CecilX.PE.ImageReader.ReadMetadata () [0x00000] in <9a2bc2dadc3549b3bfc74bb584d58989>:0 
+  at Mono.CecilX.PE.ImageReader.ReadImage () [0x000a2] in <9a2bc2dadc3549b3bfc74bb584d58989>:0 
+  at Mono.CecilX.PE.ImageReader.ReadImage (Mono.Disposable`1[T] stream, System.String file_name) [0x00007] in <9a2bc2dadc3549b3bfc74bb584d58989>:0 
+  at Mono.CecilX.ModuleDefinition.ReadModule (Mono.Disposable`1[T] stream, System.String fileName, Mono.CecilX.ReaderParameters parameters) [0x00006] in <9a2bc2dadc3549b3bfc74bb584d58989>:0 
+  at Mono.CecilX.ModuleDefinition.ReadModule (System.String fileName, Mono.CecilX.ReaderParameters parameters) [0x0006c] in <9a2bc2dadc3549b3bfc74bb584d58989>:0 
+  at Mono.CecilX.AssemblyDefinition.ReadAssembly (System.String fileName, Mono.CecilX.ReaderParameters parameters) [0x00000] in <9a2bc2dadc3549b3bfc74bb584d58989>:0 
+  at Mirror.Weaver.Weaver.Weave (System.String assName, System.Collections.Generic.IEnumerable`1[T] dependencies) [0x00006] in E:\gameunity\fallguy\Assets\Mirror\Editor\Weaver\Weaver.cs:165 
+  at Mirror.Weaver.Weaver.WeaveAssembly (System.String assembly, System.Collections.Generic.IEnumerable`1[T] dependencies) [0x00006] in E:\gameunity\fallguy\Assets\Mirror\Editor\Weaver\Weaver.cs:222 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Mirror.Weaver.CompilationFinishedHook:HandleError (string) (at E:/gameunity/fallguy/Assets/Mirror/Editor/Weaver/CompilationFinishedHook.cs:35)
+Mirror.Weaver.Weaver:WeaveAssembly (string,System.Collections.Generic.IEnumerable`1<string>) (at E:/gameunity/fallguy/Assets/Mirror/Editor/Weaver/Weaver.cs:226)
+Mirror.Weaver.CompilationFinishedHook:OnCompilationFinished (string,UnityEditor.Compilation.CompilerMessage[]) (at E:/gameunity/fallguy/Assets/Mirror/Editor/Weaver/CompilationFinishedHook.cs:142)
+Mirror.Weaver.CompilationFinishedHook:WeaveExistingAssemblies () (at E:/gameunity/fallguy/Assets/Mirror/Editor/Weaver/CompilationFinishedHook.cs:62)
+Mirror.Weaver.CompilationFinishedHook:OnInitializeOnLoad () (at E:/gameunity/fallguy/Assets/Mirror/Editor/Weaver/CompilationFinishedHook.cs:52)
+
+(Filename: E:/gameunity/fallguy/Assets/Mirror/Editor/Weaver/CompilationFinishedHook.cs Line: 35)
+
+Weaving failed for: Library/ScriptAssemblies/Mirror.Examples.dll
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Mirror.Weaver.CompilationFinishedHook:OnCompilationFinished (string,UnityEditor.Compilation.CompilerMessage[]) (at E:/gameunity/fallguy/Assets/Mirror/Editor/Weaver/CompilationFinishedHook.cs:146)
+Mirror.Weaver.CompilationFinishedHook:WeaveExistingAssemblies () (at E:/gameunity/fallguy/Assets/Mirror/Editor/Weaver/CompilationFinishedHook.cs:62)
+Mirror.Weaver.CompilationFinishedHook:OnInitializeOnLoad () (at E:/gameunity/fallguy/Assets/Mirror/Editor/Weaver/CompilationFinishedHook.cs:52)
+
+(Filename: E:/gameunity/fallguy/Assets/Mirror/Editor/Weaver/CompilationFinishedHook.cs Line: 146)
+
+Find all reader and writers took 276 milliseconds
 Script Module: Assembly-CSharp.dll
 [CameraManager] NetworkBehaviourProcessor
 [CharacterControls] NetworkBehaviourProcessor
@@ -115,9 +127,9 @@ Script Module: Assembly-CSharp.dll
 [ItemPickup] NetworkBehaviourProcessor
 [UI] NetworkBehaviourProcessor
 [win] NetworkBehaviourProcessor
-Weave behaviours and messages took289 milliseconds
-  ProcessSitesModule Assembly-CSharp.dll elapsed time:00:00:00.0146772
-Find all reader and writers took 366 milliseconds
+Weave behaviours and messages took300 milliseconds
+  ProcessSitesModule Assembly-CSharp.dll elapsed time:00:00:00.0439277
+Find all reader and writers took 370 milliseconds
 Script Module: Mirror.Components.dll
 [NetworkAnimator] NetworkBehaviourProcessor
 [NetworkRoomPlayer] NetworkBehaviourProcessor
@@ -149,10 +161,14 @@ Script Module: Mirror.Components.dll
 [NetworkTransformBase] NetworkBehaviourProcessor
 [NetworkTransformBase] NetworkBehaviourProcessor
 [NetworkTransformChild] NetworkBehaviourProcessor
-Weave behaviours and messages took1088 milliseconds
-  ProcessSitesModule Mirror.Components.dll elapsed time:00:00:00.0500399
-Find all reader and writers took 264 milliseconds
+Weave behaviours and messages took1106 milliseconds
+  ProcessSitesModule Mirror.Components.dll elapsed time:00:00:00.0581692
+Find all reader and writers took 333 milliseconds
 Script Module: Mirror.Tests.Common.dll
-Weave behaviours and messages took7 milliseconds
-Find all reader and writers took 435 milliseconds
+Weave behaviours and messages took10 milliseconds
+Find all reader and writers took 427 milliseconds
 Script Module: Unity.TextMeshPro.dll
+Weave behaviours and messages took497 milliseconds
+Find all reader and writers took 228 milliseconds
+Script Module: Mirror.Tests.Runtime.dll
+Weave behaviours and messages took32 milliseconds
