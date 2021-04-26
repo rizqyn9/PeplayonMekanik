@@ -15,6 +15,9 @@ public class Dead : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        other.transform.position = CurrentCheckpoint;
+        if (other.CompareTag("Player"))
+        {
+            other.transform.position = CurrentCheckpoint;
+        }
     }
 }

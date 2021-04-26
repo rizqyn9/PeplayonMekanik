@@ -32,6 +32,7 @@ TagManager:
   - SFX
   - dd
   - obstacle3
+  - Stone
   layers:
   - Default
   - TransparentFX
