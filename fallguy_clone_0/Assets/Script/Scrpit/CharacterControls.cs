@@ -43,6 +43,12 @@ public class CharacterControls : NetworkBehaviour
 
     public LayerMask ground;
 
+    public void lolos()
+    {
+        cutsceneawal = true;
+        blend = 0f;
+    }
+
     [Client]
     private void Awake()
     {
