@@ -61,7 +61,7 @@ public class CharacterControls : NetworkBehaviour
         airVelocity = 8f;
         gravity = 10.0f;
         maxVelocityChange = 10.0f;
-        jumpHeight = 5f;
+        jumpHeight = 10f;
         maxFallSpeed = 20.0f;
         rotateSpeed = 25f; //Speed the player rotate
     }

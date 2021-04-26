@@ -34,17 +34,10 @@ public class CameraManager : NetworkBehaviour
     {
     }
 
-    /*[Command]*/
-
     public void Init()
     {
         pivot = camTrans.parent;
     }
-
-    /*  [ClientRpc]
-      public void clientinit()
-      {
-      }*/
 
     [Command]
     public void FollowTarget(float d)
@@ -59,6 +52,7 @@ public class CameraManager : NetworkBehaviour
         HandleRotations(d, v, h, targetSpeed);
     }
 
+    [Client]
     public void clientfollowtarget(float b)
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
@@ -67,18 +61,18 @@ public class CameraManager : NetworkBehaviour
         transform.position = targetPosition; //Update the camera position
     }
 
-    public void HandleRotations(float r, float z, float n, float targetSpeed)
+    public void HandleRotations(float r, float v, float h, float targetSpeed)
     { //Function that rotates the camera correctly
         pivot = camTrans.parent;
         if (turnSmoothing > 0)
         {
-            smoothX = Mathf.SmoothDamp(smoothX, n, ref smoothXvelocity, turnSmoothing); //Gradually change a value toward a desired goal over time.
-            smoothY = Mathf.SmoothDamp(smoothY, z, ref smoothYvelocity, turnSmoothing);
+            smoothX = Mathf.SmoothDamp(smoothX, h, ref smoothXvelocity, turnSmoothing); //Gradually change a value toward a desired goal over time.
+            smoothY = Mathf.SmoothDamp(smoothY, v, ref smoothYvelocity, turnSmoothing);
         }
         else
         {
-            smoothX = n;
-            smoothY = z;
+            smoothX = h;
+            smoothY = v;
         }
 
         tiltAngle -= smoothY * targetSpeed; //Update the angle at which the camera will move

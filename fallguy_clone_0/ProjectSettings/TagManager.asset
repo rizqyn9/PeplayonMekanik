@@ -31,6 +31,7 @@ TagManager:
   - MusicPlayer
   - SFX
   - dd
+  - obstacle3
   layers:
   - Default
   - TransparentFX
