@@ -14,6 +14,9 @@ public class MenuGroup : MonoBehaviour
     public TextMeshProUGUI selectCharacterText;
     public TextMeshProUGUI OptionText;
     public TextMeshProUGUI CreditText;
+    public float TweenTime;
+    public float TweenTimeHUD;
+    private int index;
 
     public void Subscribe(MenuList list)
     {
@@ -30,18 +33,18 @@ public class MenuGroup : MonoBehaviour
         {
             if (list == menuLists[2])
             {
-                selectCharacter.enabled = true;
-                selectCharacterText.enabled = true;
+                index = 1;
+                StartCoroutine(animMenuStart(1));
             }
             else if (list == menuLists[0])
             {
-                Option.enabled = true;
-                OptionText.enabled = true;
+                index = 2;
+                StartCoroutine(animMenuStart(1));
             }
             else
             {
-                Credit.enabled = true;
-                CreditText.enabled = true;
+                index = 3;
+                StartCoroutine(animMenuStart(1));
             }
 
             Debug.Log("enter");
@@ -61,4 +64,73 @@ public class MenuGroup : MonoBehaviour
         Credit.enabled = false;
         CreditText.enabled = false;
     }
+
+    #region effect menu
+
+    private IEnumerator animMenuStart(int i)
+    {
+        if (index == 1)
+        {
+            selectCharacter.enabled = true;
+            LeanTween.value(selectCharacter.gameObject, 0.1f, 1, TweenTime)
+                .setOnUpdate((value) =>
+                {
+                    selectCharacter.fillAmount = value;
+                });
+            yield return new WaitForSeconds(TweenTime);
+            selectCharacterText.enabled = true;
+        }
+        else if (index == 2)
+        {
+            Option.enabled = true;
+
+            LeanTween.value(Option.gameObject, 0.1f, 1, TweenTime)
+                .setOnUpdate((value) =>
+                {
+                    Option.fillAmount = value;
+                });
+            yield return new WaitForSeconds(TweenTime);
+            OptionText.enabled = true;
+        }
+        else if (index == 3)
+        {
+            Credit.enabled = true;
+
+            LeanTween.value(Credit.gameObject, 0.1f, 1, TweenTime)
+                .setOnUpdate((value) =>
+                {
+                    Credit.fillAmount = value;
+                });
+            yield return new WaitForSeconds(TweenTime);
+            CreditText.enabled = true;
+        }
+    }
+
+    #endregion effect menu
+
+    public void animOnPointerExit()
+    {
+        StopAllCoroutines();
+    }
+
+    #region TweenActiveHUD
+
+    public void setActive(GameObject hud)
+    {
+        Debug.Log("active");
+        hud.SetActive(true);
+        LeanTween.scale(hud.gameObject, Vector3.one, TweenTimeHUD)
+            .setEaseInOutQuint();
+    }
+
+    public void setActivefalse(GameObject hud)
+    {
+        Debug.Log("false");
+
+        LeanTween.scale(hud.gameObject, Vector3.zero, TweenTimeHUD)
+            .setEaseInOutQuint();
+        hud.SetActive(false);
+    }
+
+    #endregion TweenActiveHUD
 }

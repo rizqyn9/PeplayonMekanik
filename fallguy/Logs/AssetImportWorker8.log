@@ -9,17 +9,17 @@ D:\app\New folder\2020.3.0f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker0
+AssetImportWorker8
 -projectPath
 E:/clone/PeplayonMekanik/fallguy
 -logFile
-Logs/AssetImportWorker0.log
+Logs/AssetImportWorker8.log
 -srvPort
 52143
 Successfully changed project path to: E:/clone/PeplayonMekanik/fallguy
 E:/clone/PeplayonMekanik/fallguy
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 200.77 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 151.18 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path D:/app/New folder/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -35,48 +35,48 @@ Initialize mono
 Mono path[0] = 'D:/app/New folder/2020.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'D:/app/New folder/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/app/New folder/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56972
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/app/New folder/2020.3.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/app/New folder/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/app/New folder/2020.3.0f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.008348 seconds.
+Registered in 0.005875 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 171.71 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 127.81 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in 12.501 seconds
+- Completed reload, in  6.999 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.014918 seconds.
+Registered in 0.012956 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.29 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.87 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
-Find all reader and writers took 346 milliseconds
+Find all reader and writers took 527 milliseconds
 Script Module: UnityEngine.UI.dll
-Weave behaviours and messages took344 milliseconds
-Find all reader and writers took 250 milliseconds
+Weave behaviours and messages took394 milliseconds
+Find all reader and writers took 342 milliseconds
 Script Module: UnityEngine.TestRunner.dll
-Weave behaviours and messages took130 milliseconds
-Find all reader and writers took 224 milliseconds
+Weave behaviours and messages took135 milliseconds
+Find all reader and writers took 276 milliseconds
 Script Module: SimpleWebTransport.dll
-Weave behaviours and messages took45 milliseconds
-Find all reader and writers took 235 milliseconds
+Weave behaviours and messages took25 milliseconds
+Find all reader and writers took 221 milliseconds
 Script Module: Unity.Timeline.dll
-Weave behaviours and messages took140 milliseconds
-Find all reader and writers took 262 milliseconds
+Weave behaviours and messages took121 milliseconds
+Find all reader and writers took 221 milliseconds
 Script Module: Mirror.Examples.dll
 [Projectile] NetworkBehaviourProcessor
 [Tank] NetworkBehaviourProcessor
@@ -102,9 +102,9 @@ Script Module: Mirror.Examples.dll
 [PlayerController] NetworkBehaviourProcessor
 [RandomColor] NetworkBehaviourProcessor
 [ShootingTankBehaviour] NetworkBehaviourProcessor
-Weave behaviours and messages took279 milliseconds
-  ProcessSitesModule Mirror.Examples.dll elapsed time:00:00:00.0343776
-Find all reader and writers took 255 milliseconds
+Weave behaviours and messages took295 milliseconds
+  ProcessSitesModule Mirror.Examples.dll elapsed time:00:00:00.0355175
+Find all reader and writers took 420 milliseconds
 Script Module: Assembly-CSharp.dll
 [CameraManager] NetworkBehaviourProcessor
 [CharacterControls] NetworkBehaviourProcessor
@@ -115,9 +115,9 @@ Script Module: Assembly-CSharp.dll
 [ItemPickup] NetworkBehaviourProcessor
 [UI] NetworkBehaviourProcessor
 [win] NetworkBehaviourProcessor
-Weave behaviours and messages took281 milliseconds
-  ProcessSitesModule Assembly-CSharp.dll elapsed time:00:00:00.0183865
-Find all reader and writers took 237 milliseconds
+Weave behaviours and messages took259 milliseconds
+  ProcessSitesModule Assembly-CSharp.dll elapsed time:00:00:00.0110276
+Find all reader and writers took 223 milliseconds
 Script Module: Mirror.Components.dll
 [NetworkAnimator] NetworkBehaviourProcessor
 [NetworkRoomPlayer] NetworkBehaviourProcessor
@@ -149,8 +149,46 @@ Script Module: Mirror.Components.dll
 [NetworkTransformBase] NetworkBehaviourProcessor
 [NetworkTransformBase] NetworkBehaviourProcessor
 [NetworkTransformChild] NetworkBehaviourProcessor
-Weave behaviours and messages took194 milliseconds
-  ProcessSitesModule Mirror.Components.dll elapsed time:00:00:00.0137222
-Find all reader and writers took 243 milliseconds
+Weave behaviours and messages took216 milliseconds
+  ProcessSitesModule Mirror.Components.dll elapsed time:00:00:00.0098951
+Find all reader and writers took 209 milliseconds
 Script Module: Mirror.Tests.Common.dll
-Weave behaviours and messages took6 milliseconds
+Weave behaviours and messages took8 milliseconds
+Find all reader and writers took 282 milliseconds
+Script Module: Unity.TextMeshPro.dll
+Weave behaviours and messages took328 milliseconds
+Find all reader and writers took 221 milliseconds
+Script Module: Mirror.Tests.Runtime.dll
+Weave behaviours and messages took35 milliseconds
+Find all reader and writers took 201 milliseconds
+Script Module: Telepathy.dll
+Weave behaviours and messages took8 milliseconds
+Find all reader and writers took 248 milliseconds
+Script Module: Mirror.Authenticators.dll
+Weave behaviours and messages took176 milliseconds
+  ProcessSitesModule Mirror.Authenticators.dll elapsed time:00:00:00.0069825
+Find all reader and writers took 207 milliseconds
+Script Module: kcp2k.dll
+Weave behaviours and messages took17 milliseconds
+Find all reader and writers took 188 milliseconds
+Script Module: Mirror.Examples.Cloud.GUI.dll
+Weave behaviours and messages took9 milliseconds
+Find all reader and writers took 181 milliseconds
+Script Module: Mirror.Cloud.dll
+Weave behaviours and messages took9 milliseconds
+Find all reader and writers took 209 milliseconds
+Script Module: Mirror.Examples.Cloud.Pong.dll
+[Ball] NetworkBehaviourProcessor
+[BallManager] NetworkBehaviourProcessor
+[Player] NetworkBehaviourProcessor
+Weave behaviours and messages took68 milliseconds
+  ProcessSitesModule Mirror.Examples.Cloud.Pong.dll elapsed time:00:00:00.0039882
+Find all reader and writers took 166 milliseconds
+Script Module: Mirror.Tests.Performance.Runtime.dll
+Weave behaviours and messages took0 milliseconds
+Find all reader and writers took 273 milliseconds
+Script Module: UnityEditor.TestRunner.dll
+Weave behaviours and messages took146 milliseconds
+Find all reader and writers took 261 milliseconds
+Script Module: UnityEditor.UI.dll
+Weave behaviours and messages took60 milliseconds

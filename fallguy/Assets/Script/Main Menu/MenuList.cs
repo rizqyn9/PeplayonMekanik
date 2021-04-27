@@ -20,6 +20,7 @@ public class MenuList : MonoBehaviour, IPointerClickHandler, IPointerEnterHandle
     public void OnPointerExit(PointerEventData eventData)
     {
         menuGroup.OnListExit(this);
+        menuGroup.animOnPointerExit();
     }
 
     private void Start()
