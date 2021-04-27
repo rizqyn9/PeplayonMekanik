@@ -4662,7 +4662,7 @@ MonoBehaviour:
   OptionText: {fileID: 1279439514}
   CreditText: {fileID: 1466430762}
   TweenTime: 0.3
-  TweenTimeHUD: 0.2
+  TweenTimeHUD: 0.3
 --- !u!1 &1333051940
 GameObject:
   m_ObjectHideFlags: 0

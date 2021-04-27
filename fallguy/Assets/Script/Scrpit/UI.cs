@@ -15,14 +15,13 @@ public class UI : NetworkBehaviour
     [SerializeField]
     private GameObject dust;
 
-    private GameObject PauseMenu;
-
     public GameObject[] IndicatorItem;
     public GameObject dd;
     public GameObject UIeffect;
+    public GameObject parent;
     public Text texteffect;
 
-    private bool isPaused = false;
+    public float TweenTimeItemInd;
 
     [SerializeField]
     private GameObject dustlari;
@@ -31,36 +30,43 @@ public class UI : NetworkBehaviour
 
     public void effectfaster()
     {
+        LeanTween.scale(parent, Vector3.one, TweenTimeItemInd);
         texteffect.text = "LEBIH CEPAT";
     }
 
     public void effectslower()
     {
+        LeanTween.scale(parent, Vector3.one, TweenTimeItemInd);
         texteffect.text = "MELAMBAT";
     }
 
     public void effectbigger()
     {
+        LeanTween.scale(parent, Vector3.one, TweenTimeItemInd);
         texteffect.text = "BIGGER";
     }
 
     public void effecttransculent()
     {
+        LeanTween.scale(parent, Vector3.one, TweenTimeItemInd);
         texteffect.text = "TEMBUS BENDA";
     }
 
     public void effecthighjump()
     {
+        LeanTween.scale(parent, Vector3.one, TweenTimeItemInd);
         texteffect.text = "LOMPAT TINGGI";
     }
 
     public void EFFECTSTUNT()
     {
+        LeanTween.scale(parent, Vector3.one, TweenTimeItemInd);
         texteffect.text = "TERDIAM";
     }
 
     public void effectrespawn()
     {
+        LeanTween.scale(parent, Vector3.one, TweenTimeItemInd);
         texteffect.text = "RESPAWN";
     }
 
@@ -101,26 +107,6 @@ public class UI : NetworkBehaviour
     }
 
     #endregion Set Playable Character and non
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            PauseMenu = GameObject.FindGameObjectWithTag("PauseMenu");
-            if (!isPaused)
-            {
-                Paused();
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-            }
-            else
-            {
-                Resume();
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-            }
-        }
-    }
 
     private void LateUpdate()
     {
@@ -237,24 +223,4 @@ public class UI : NetworkBehaviour
     }
 
     #endregion set indicator item and destroy
-
-    #region PauseMenu
-
-    private void Paused()
-    {
-        isPaused = true;
-        Time.timeScale = 0f;
-        Canvas tt = PauseMenu.GetComponent<Canvas>();
-        tt.enabled = true;
-    }
-
-    private void Resume()
-    {
-        isPaused = false;
-        Time.timeScale = 1;
-        Canvas tt = PauseMenu.GetComponent<Canvas>();
-        tt.enabled = false;
-    }
-
-    #endregion PauseMenu
 }

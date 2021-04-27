@@ -68,14 +68,27 @@ public class CutScene : MonoBehaviour
         Camera2.enabled = false;
         dd.SetActive(true);
         countdown.Play();
-        CountStart.SetActive(true);
-        yield return new WaitForSeconds(1);
+
+        LeanTween.scale(CountStart, Vector3.one, 0.3f)
+            .setEaseInCirc();
+        yield return new WaitForSeconds(0.3f);
+        txt.text = "1";
+        yield return new WaitForSeconds(0.7f);
+        CountStart.transform.localScale = Vector3.zero;
+        LeanTween.scale(CountStart, Vector3.one, 0.3f)
+             .setEaseInSine();
+        yield return new WaitForSeconds(0.3f);
         txt.text = "2";
         countdown.Play();
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.7f);
+        CountStart.transform.localScale = Vector3.zero;
+        LeanTween.scale(CountStart, Vector3.one, 0.3f)
+             .setEaseInQuad();
+        yield return new WaitForSeconds(0.3f);
+
         txt.text = "3";
         countdown.Play();
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.7f);
         CountStart.SetActive(false);
         horn.Play();
         yield return new WaitForSeconds(1);

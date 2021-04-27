@@ -20,6 +20,8 @@ public class win : NetworkBehaviour
     private bool lolos;
     public GameObject camera1;
 
+    public float TweenTimeQualified;
+
     public GameObject CameraSee;
     private int spaceindex = 1;
     public Transform modeView1;
@@ -38,6 +40,7 @@ public class win : NetworkBehaviour
         if (lolos)
         {
             canvasDisplayChangeCamera.SetActive(true);
+            LeanTween.scale(canvasDisplayChangeCamera, Vector3.one, TweenTimeQualified);
             if (Input.GetKeyDown(KeyCode.Space) && spaceindex == 1)
             {
                 spaceindex++;
@@ -119,7 +122,9 @@ public class win : NetworkBehaviour
         Debug.Log(hh);
         NetworkManagerPong.haha = false;
         canvasDisplayQualified.SetActive(true);
-        GameObject score = canvasDisplayQualified.transform.GetChild(0).GetChild(2).gameObject;
+        LeanTween.scale(canvasDisplayQualified, Vector3.one, TweenTimeQualified);
+
+        GameObject score = canvasDisplayQualified.transform.GetChild(2).gameObject;
         score.GetComponent<Text>().text = playerlolos.ToString();
         if (hh == hj)
         {
